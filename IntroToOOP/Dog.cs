@@ -13,12 +13,22 @@ namespace IntroToOOP
         private int runningSpeed;
         private double weight;
 
-        public Dog()
+        
+        public int HairLength
         {
-
+            get { return this.hairLength; }
+            set { this.hairLength = value; }
         }
 
-        public Dog(int hairLength, int height, int runningSpeed, double weight)
+        public Dog() //default constructor
+        {
+            this.weight = 90d;
+            this.height = 24;
+            this.runningSpeed = 15;
+            this.hairLength = 1;
+        }
+
+        public Dog(int hairLength, int height, int runningSpeed, double weight) //method overloading -- polymorphism
         {
             this.hairLength = hairLength;
             this.height = height;

@@ -31,6 +31,11 @@ namespace IntroToOOP
             cat1.FurColor = "red"; //this is the SET portion of the property
             Console.WriteLine(cat1.FurColor); //this is the GET portion of the property
 
+            SuperHero goodGuy = new SuperHero("Super Good Guy");
+            goodGuy.FightEvil();
+            goodGuy.FightEvil();
+            goodGuy.NextLevel();
+
         }
     }
 }
